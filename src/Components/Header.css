@@ -1,0 +1,74 @@
+header > * {
+    font-size: 1.125rem;
+}
+
+.header {
+    background-color: rgba(23, 48, 29, 0.5);
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70rem;
+}
+
+.header-text {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+}
+
+ul {
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+ul > li {
+    display: inline-block;
+    height: 4rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+ul > li:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.language {
+  display: inline-block;
+  position: relative; /* Så vi kan placere ::after korrekt */
+}
+
+.language-flag {
+  display: inline-block;
+  width: 1.5rem; /* Øg størrelsen for bedre synlighed */
+}
+
+.hover-underline {
+  position: relative; /* Sørg for at kunne placere ::after relativt til linket */
+  display: inline-block; /* Sørg for, at linket ikke er inline */
+  text-decoration: none; /* Fjern standard underline, hvis den findes */
+}
+
+.hover-underline::after {
+  content: ""; /* Tomt indhold for at skabe underline */
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%; /* Sørg for, at underlinjen er samme bredde som flagget */
+  height: 1px; /* Tykkelsen af underlinjen */
+  background-color: #214428; /* Farven på underlinjen */
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Tilføj en overgang for glidende effekt */
+}
+
+.hover-underline:hover::after {
+  opacity: 1; /* Vis underlinjen ved hover */
+}
+
+
