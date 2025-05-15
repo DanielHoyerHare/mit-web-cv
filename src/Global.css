@@ -19,6 +19,7 @@ h1 {
 }
 .page-container {
   width: 70rem;
+  height: auto;
   background-color: #E8ECD7;
   padding: 2rem;
 }
