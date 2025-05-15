@@ -43,13 +43,13 @@ function HeaderHTML({ bgColor, language, setLanguage }: HeaderHTMLProps) {
   return (
     <header className="header sticky box-shadow" style={{ backgroundColor: bgColor }}>
       <div className="header-container">
-        <Link className="header-text hover-underline" to="/">Daniel Høyer Hare</Link>
+        <Link className="header-text hover-underline hover-background" to="/">Daniel Høyer Hare</Link>
         <nav>
           <ul>
-            <li><Link className="header-text hover-underline" to="/">{getTranslation('home', language)}</Link></li>
-            <li><Link className="header-text hover-underline" to="/contact">{getTranslation('contact', language)}</Link></li>
+            <li><Link className="header-text hover-underline hover-background" to="/">{getTranslation('home', language)}</Link></li>
+            <li><Link className="header-text hover-underline hover-background" to="/contact">{getTranslation('contact', language)}</Link></li>
             <li>
-              <div className="language hover-underline">
+              <div className="language hover-underline hover-background">
                 <img
                   className="language-flag"
                   src={`/img/flags/${language}.png`} // Vis flag baseret på sprog
