@@ -26,18 +26,6 @@
     padding-right: 5rem;
 }
 
-.section::after {
-  content: ""; /* Tomt indhold for at skabe underline */
-  position: absolute;
-  bottom: -2rem;
-  left: 0;
-  width: 25%; /* Sørg for, at underlinjen er samme bredde som flagget */
-  height: 0.25rem; /* Tykkelsen af underlinjen */
-  background-color: #00000017; /* Farven på underlinjen */
-  opacity: 1;
-  border-radius: 0.25rem;
-}
-
 .section {
     text-align: start;
     position: relative;
