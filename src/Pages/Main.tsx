@@ -8,7 +8,8 @@ function Main() {
         <div className="page-container border-radius box-shadow">
             <div className="page-header box-shadow2">
                 <h1 className="name">Daniel Høyer Hare</h1>
-                <img className="pfp" src="/img/pfp.png" alt="English" />
+                <img className="pfp" src={`${process.env.PUBLIC_URL}/img/pfp.png`} alt="Profil" />
+
             </div>
 
             <div className="section">

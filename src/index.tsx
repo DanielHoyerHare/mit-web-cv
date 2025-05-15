@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router  } from 'react-router-dom';
 import { LanguageProvider } from './Language/LanguageContext';
 
 const root = ReactDOM.createRoot(
@@ -11,11 +11,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router basename="/mit-web-cv">
       <LanguageProvider>
         <App />
       </LanguageProvider>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 

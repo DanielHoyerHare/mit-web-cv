@@ -52,7 +52,7 @@ function HeaderHTML({ bgColor, language, setLanguage }: HeaderHTMLProps) {
               <div className="language hover-underline hover-background">
                 <img
                   className="language-flag"
-                  src={`/img/flags/${language}.png`} // Vis flag baseret på sprog
+                  src={`${process.env.PUBLIC_URL}/img/flags/${language}.png`} // Vis flag baseret på sprog
                   alt={language} 
                 />
               </div>
