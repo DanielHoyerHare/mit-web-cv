@@ -6,7 +6,7 @@ import Contact from './Pages/Contact';
 
 export default function App() {
   return (
-    <div className="app">
+    <div>
       <Header />
       <div className="app-content">
         <Routes>

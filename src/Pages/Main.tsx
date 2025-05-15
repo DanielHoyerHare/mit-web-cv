@@ -6,9 +6,7 @@ function Main() {
     return (
         <div className="page-container border-radius box-shadow">
             <div className="page-header">
-                <div className="page-header-left">
-                    <h1 className="name">Daniel Høyer Hare</h1>
-                </div>
+                <h1 className="name">Daniel Høyer Hare</h1>
                 <img className="pfp" src="/img/pfp.png" alt="English" />
             </div>
             <h1>Welcome to the React App</h1>

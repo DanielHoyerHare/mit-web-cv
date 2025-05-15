@@ -6,7 +6,9 @@
     display:grid;
     grid-template-columns: 1fr auto;
     padding: 2rem;
-    gap:2rem;
+    gap:5rem;
+    border-radius: 1rem;
+    background-color: #0000000a;
 }
 
 .page-header-left {
@@ -21,7 +23,7 @@
 
 .name{
     align-self: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 .pfp {
