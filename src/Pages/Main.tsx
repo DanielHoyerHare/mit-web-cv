@@ -57,10 +57,14 @@ function Main() {
                     </div>
                 </div>
             </div>
-            <p>Modify the code to see live changes.</p>
-            <p>Happy coding!</p>
-            <p>Modify the code to see live changes.</p>
-            <p>Happy coding!</p>
+            <div className="section">
+                <h1>{getTranslation('educationTitle', language)}</h1>
+                <div className="education">
+                    <h3>{getTranslation('educationTitle2', language)}</h3>
+                    <h6>{getTranslation('educationPlace', language)} | {getTranslation('educationDate', language)}</h6>
+                    <p className="gap">{getTranslation('educationText', language)}</p>
+                </div>
+            </div>
         </div>
     );
 }

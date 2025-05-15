@@ -26,14 +26,6 @@
     padding-right: 5rem;
 }
 
-.section {
-    text-align: start;
-    position: relative;
-    display: inline-block;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
 .item-container {
     display:flex;
     justify-content: space-between;
@@ -69,4 +61,12 @@
     .work > .item-container {
     flex-direction: column;
 }
+}
+
+.education {
+    padding-top: 1rem;
+}
+
+.education > *:not(:first-child) {
+    padding-top: 0.5rem;
 }

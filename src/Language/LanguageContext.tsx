@@ -25,7 +25,16 @@ export const useLanguage = () => {
 
 // LanguageProvider komponent
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('da'); // Default sprog er dansk, og vi bruger Language typen
+  // 1. Hent sprog fra localStorage eller brug 'da' som fallback
+  const [language, setLanguage] = useState<Language>(() => {
+    const stored = localStorage.getItem('language');
+    return (stored === 'en' || stored === 'da') ? stored : 'da';
+  });
+
+  // 2. Opdater localStorage hver gang sproget ændres
+  React.useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
