@@ -4,12 +4,29 @@
 
 .page-header {
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr auto;
+    padding: 2rem;
+    gap:2rem;
 }
 
+.page-header-left {
+    align-self: center;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    grid-column:1;
+    border-radius: 1rem;
+    background-color: #0000000a;
+}
+
+.name{
+    align-self: center;
+    font-size: 4rem;
+    font-weight: 600;
+}
 .pfp {
     grid-column: 2;
-    grid-row: 1;
     border-radius: 50%;
+    width: 20rem;
+    padding-right: 5rem;
 }
