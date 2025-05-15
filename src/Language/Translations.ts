@@ -2,15 +2,13 @@ export type Language = 'en' | 'da'; // Angiver de mulige sprog
 
 export const translations: Record<Language, Record<string, string>> = {
   en: {
-    welcome: "Welcome",
-    about: "About",
     contact: "Contact",
     home: "Home",
+    introduction: "Introduction - a little about me"
   },
   da: {
-    welcome: "Velkommen",
-    about: "Om",
     contact: "Kontakt",
     home: "Hjem",
+    introduction: "Introduktion - lidt om mig"
   }
 };
