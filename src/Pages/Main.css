@@ -13,18 +13,9 @@
     margin-right: 2rem;
 }
 
-.page-header-left {
-    align-self: center;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    grid-column:1;
-    border-radius: 1rem;
-    background-color: #0000000a;
-}
-
 .name{
     align-self: center;
+    justify-self: right;
     font-size: 3.5rem;
     font-weight: 600;
 }
@@ -33,4 +24,61 @@
     border-radius: 50%;
     width: 20rem;
     padding-right: 5rem;
+}
+
+.section::after {
+  content: ""; /* Tomt indhold for at skabe underline */
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 25%; /* Sørg for, at underlinjen er samme bredde som flagget */
+  height: 0.25rem; /* Tykkelsen af underlinjen */
+  background-color: #00000017; /* Farven på underlinjen */
+  opacity: 1;
+  border-radius: 0.25rem;
+}
+
+.section {
+    text-align: start;
+    position: relative;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.item-container {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width:100%;
+}
+
+.work {
+    background-color: #0000000a;
+    width: 28%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.work:last-child {
+    padding-bottom: 1rem;
+}
+
+.work > h4,h6 {
+    padding-top: 1rem;
+}
+
+.work > .item-container {
+    padding: 0;
+    margin: 0;
+}
+
+.work > .item-container > h6 {
+    padding-top: 0.25rem;
+}
+
+@media (max-width: 1150px) {
+    .work > .item-container {
+    flex-direction: column;
+}
 }

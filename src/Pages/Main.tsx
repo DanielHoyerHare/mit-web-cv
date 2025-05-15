@@ -6,16 +6,61 @@ function Main() {
     const { language } = useLanguage();
     return (
         <div className="page-container border-radius box-shadow">
-            <div className="page-header">
+            <div className="page-header box-shadow2">
                 <h1 className="name">Daniel Høyer Hare</h1>
                 <img className="pfp" src="/img/pfp.png" alt="English" />
             </div>
-            <h1>{getTranslation('introduction', language)}</h1>
-            <p className="testMargin">This is a simple React application.</p>
-            <p className="testMargin">Modify the code to see live changes.</p>
-            <p className="testMargin">Happy coding!</p>
-            <p className="testMargin">Modify the code to see live changes.</p>
-            <p className="testMargin">Happy coding!</p>
+
+            <div className="section">
+                <h1>{getTranslation('introductionTitle', language)}</h1>
+                <p className="gap">{getTranslation('introductionText', language)}</p>
+            </div>
+
+            <div className="section">
+                <h1>{getTranslation('workTitle', language)}</h1>
+                <div className="item-container">
+
+                    <div className="work box-shadow2">
+                        <h3>{getTranslation('work3Title', language)}</h3>
+                        <div className="item-container">
+                            <h6>{getTranslation('work3Place', language)}</h6>
+                            <h6>{getTranslation('work3Date', language)}</h6>
+                        </div>
+                        <h4>{getTranslation('tasksTitle', language)}:</h4>
+                        <p>{getTranslation('work3Tasks', language)}</p>
+                        <h4>{getTranslation('skillsTitle', language)}:</h4>
+                        <p>{getTranslation('work3Skills', language)}</p>
+                    </div>
+
+                    <div className="work box-shadow2">
+                        <h3>{getTranslation('work2Title', language)}</h3>
+                        <div className="item-container">
+                            <h6>{getTranslation('work2Place', language)}</h6>
+                            <h6>{getTranslation('work2Date', language)}</h6>
+                        </div>
+                        <h4>{getTranslation('tasksTitle', language)}:</h4>
+                        <p>{getTranslation('work2Tasks', language)}</p>
+                        <h4>{getTranslation('skillsTitle', language)}:</h4>
+                        <p>{getTranslation('work2Skills', language)}</p>
+                    </div>
+
+                    <div className="work box-shadow2">
+                        <h3>{getTranslation('work1Title', language)}</h3>
+                        <div className="item-container">
+                            <h6>{getTranslation('work1Place', language)}</h6>
+                            <h6>{getTranslation('work1Date', language)}</h6>
+                        </div>
+                        <h4>{getTranslation('tasksTitle', language)}:</h4>
+                        <p>{getTranslation('work1Tasks', language)}</p>
+                        <h4>{getTranslation('skillsTitle', language)}:</h4>
+                        <p>{getTranslation('work1Skills', language)}</p>
+                    </div>
+                </div>
+            </div>
+            <p>Modify the code to see live changes.</p>
+            <p>Happy coding!</p>
+            <p>Modify the code to see live changes.</p>
+            <p>Happy coding!</p>
         </div>
     );
 }

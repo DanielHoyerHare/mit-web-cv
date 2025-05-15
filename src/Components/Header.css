@@ -24,7 +24,7 @@ header > * {
   display: inline-block;
   position: relative;
   z-index: 0;
-  padding: 10px 20px;
+  padding: 10px 2rem;
 }
 
 .hover-background::before {
@@ -58,11 +58,11 @@ ul > li {
     align-items: center;
 }
 
-ul > li:not(:first-child) {
-    margin-left: 1rem;
+ul > li .header-text{
+    padding-left: 2rem;
 }
-ul > li:not(:last-child) {
-    margin-right: 1rem;
+ul > li:not(:last-child) > .header-text {
+    padding-right: 2rem;
 }
 
 .language {

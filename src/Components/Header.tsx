@@ -48,13 +48,12 @@ function HeaderHTML({ bgColor, language, setLanguage }: HeaderHTMLProps) {
           <ul>
             <li><Link className="header-text hover-underline hover-background" to="/">{getTranslation('home', language)}</Link></li>
             <li><Link className="header-text hover-underline hover-background" to="/contact">{getTranslation('contact', language)}</Link></li>
-            <li>
+            <li onClick={() => handleChangeLanguage(language === 'en' ? 'da' : 'en')}>
               <div className="language hover-underline hover-background">
                 <img
                   className="language-flag"
                   src={`/img/flags/${language}.png`} // Vis flag baseret på sprog
-                  alt={language}
-                  onClick={() => handleChangeLanguage(language === 'en' ? 'da' : 'en')} // Skift mellem engelsk og dansk
+                  alt={language} 
                 />
               </div>
             </li>
