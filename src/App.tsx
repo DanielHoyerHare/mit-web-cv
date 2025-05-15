@@ -1,18 +1,8 @@
-import { createBrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from './Components/Header';
 import Main from './Pages/Main';
 import Contact from './Pages/Contact';
-
-const router = createBrowserRouter([
-{
-  path: "/",
-  element: <Main/>
-},
-{
-  path: "/contact",
-  element: <Contact/>
-}]);
 
 export default function App() {
   return (
@@ -21,7 +11,7 @@ export default function App() {
       <div className="app-content">
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </div>

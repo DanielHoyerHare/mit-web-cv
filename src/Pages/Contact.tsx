@@ -5,7 +5,7 @@ import '../Global.css';
 function Contact() {
     return (
         <div className="page-container border-radius box-shadow">
-            <h1>Contact:</h1>
+            <h1>Welcome to the React App</h1>
             <p className="testMargin">This is a simple React application.</p>
             <p className="testMargin">Feel free to explore the components and styles.</p>
             <p className="testMargin">Modify the code to see live changes.</p>
