@@ -1,9 +1,12 @@
 import './Main.css';
 import '../Global.css';
 import { getTranslation, useLanguage } from '../Language/LanguageContext';
+import { RevealOnScroll } from '../hooks/RevealOnScroll';
 
 function Main() {
     const { language } = useLanguage();
+    const sectionRefs = RevealOnScroll<HTMLDivElement>();
+
     return (
         <div className="page-container border-radius box-shadow">
             <div className="page-header box-shadow2">
@@ -12,12 +15,18 @@ function Main() {
 
             </div>
 
-            <div className="section">
+            <div className="section" ref={el => {
+                if (el) {
+                    (sectionRefs.current[0] = el);}
+                }}>
                 <h1>{getTranslation('introductionTitle', language)}</h1>
                 <p className="gap">{getTranslation('introductionText', language)}</p>
             </div>
 
-            <div className="section">
+            <div className="section" ref={el => {
+                if (el) {
+                    (sectionRefs.current[1] = el);}
+                }}>
                 <h1>{getTranslation('workTitle', language)}</h1>
                 <div className="item-container">
 
@@ -58,7 +67,10 @@ function Main() {
                     </div>
                 </div>
             </div>
-            <div className="section">
+            <div className="section" ref={el => {
+                if (el) {
+                    (sectionRefs.current[2] = el);}
+                }}>
                 <h1>{getTranslation('educationTitle', language)}</h1>
                 <div className="education">
                     <h3>{getTranslation('educationTitle2', language)}</h3>

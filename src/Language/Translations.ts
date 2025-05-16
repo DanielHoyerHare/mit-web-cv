@@ -85,7 +85,7 @@ export const translations: Record<Language, Record<string, string>> = {
     educationDate: "April 2020 - April 2025",
     educationText: "Jeg har gennemført linjen Datatekniker med speciale i programmering. Under uddannelsen har jeg arbejdet med primært C#, men også med JavaScript, "
     +"Python og Java. Jeg har opnået solide kompetencer inden for objektorienteret programmering, web- og appudvikling, databasedesign samt dokumentation. "
-    +"Uddannelsen har givet mig en stærk teknisk forståelse og praktisk erfaring gennem både skoleforløb og praktik."
+    +"Uddannelsen har givet mig en stærk teknisk forståelse og praktisk erfaring gennem både skoleforløb og praktik. "
     +"Jeg afsluttede med et karaktergennemsnit på 10 og opnåede karakteren 10 til svendeprøven.",
   }
 };
