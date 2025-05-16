@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mit-web-cv/static/css/main.cb0ab822.css",
-    "main.js": "/mit-web-cv/static/js/main.af39ebac.js",
+    "main.css": "/mit-web-cv/static/css/main.bf867b08.css",
+    "main.js": "/mit-web-cv/static/js/main.d5745c43.js",
     "static/js/453.e54669ae.chunk.js": "/mit-web-cv/static/js/453.e54669ae.chunk.js",
     "index.html": "/mit-web-cv/index.html",
-    "main.cb0ab822.css.map": "/mit-web-cv/static/css/main.cb0ab822.css.map",
-    "main.af39ebac.js.map": "/mit-web-cv/static/js/main.af39ebac.js.map",
+    "main.bf867b08.css.map": "/mit-web-cv/static/css/main.bf867b08.css.map",
+    "main.d5745c43.js.map": "/mit-web-cv/static/js/main.d5745c43.js.map",
     "453.e54669ae.chunk.js.map": "/mit-web-cv/static/js/453.e54669ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb0ab822.css",
-    "static/js/main.af39ebac.js"
+    "static/css/main.bf867b08.css",
+    "static/js/main.d5745c43.js"
   ]
 }
