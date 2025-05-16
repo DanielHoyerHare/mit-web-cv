@@ -23,13 +23,15 @@ export default function RevealOnScroll({ children, className = '' }: RevealOnScr
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const thisRef = ref.current;
+
+    if (thisRef) {
+      observer.observe(thisRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (thisRef) {
+        observer.unobserve(thisRef);
       }
     };
   }, []);
