@@ -28,16 +28,19 @@
 
 .item-container {
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 1rem;
     width:100%;
+    gap: 1rem;
 }
 
 .work {
     background-color: #0000000a;
-    width: 28%;
     border-radius: 1rem;
     padding: 1rem;
+    flex: 1 0;
+    min-width: 15rem;
 }
 
 .work:last-child {
@@ -60,6 +63,7 @@
 @media (max-width: 1150px) {
     .work > .item-container {
     flex-direction: column;
+    gap: 0;
 }
 }
 

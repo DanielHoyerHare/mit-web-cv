@@ -77,7 +77,7 @@ export const translations: Record<Language, Record<string, string>> = {
     skillsTitle: "Det blev jeg særlig god til",
     work3Skills: "At arbejde projektorienteret, samarbejde i et udviklingsteam, finde tekniske løsninger og strukturere opgaver fra idé til færdig løsning.",
     work2Skills: "At arbejde struktureret og effektivt, yde god kundeservice, holde overblik i travle perioder og samarbejde med kolleger på tværs af afdelinger.",
-    work1Skills: "Uddeling af aviser og reklamer i lokalområdet, planlægning af rute, håndtering af tidsfrister og ansvar for korrekt levering.",
+    work1Skills: "Arbejde selvstændigt og struktureret, overholde deadlines og tage ansvar for opgaven fra start til slut.",
 
     educationTitle: "Uddannelse",
     educationTitle2: "DATA- OG KOMMUNIKATIONSUDDANNELSEN",
